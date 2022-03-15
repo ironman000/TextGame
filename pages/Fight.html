@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Level 1</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css";>
+
+    <style> 
+    body{ background-color: rgb(19, 19, 100);
+        border-color:antiquewhite;
+        color:lightblue;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    img{
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+        </style>
+</head>
+
+<body>
+    <h2>The Fight...</h2>
+    <button onclick="typeWriter()">Read</button>
+   <img src="https://i.pinimg.com/736x/d3/6c/a0/d36ca0ec6ef84711cb0edee5899b5e25.jpg">
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = "Ahhhhhhhh! Heebie-jeebie House Horse! Get away from our treehouse or I'll slay you with my sword!";
+var speed = 30;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+    <img src="https://i.ytimg.com/vi/yvekA_4TOg4/maxresdefault.jpg">
+    <p>*silence*</p><br>
+    <p>You: "Wait a minute... this horse is totally poo-brained. We can't hurt him."</p><br>
+    <p> Jake: "Well I'm tired and don't wanna be here anymore. Let's hurry up and get rid of him already."</p><br>
+
+    <a href="Lure.html"> Gentely lure him away.</a><br><br>
+    <a href="Move.html">Pick him up.</a>
+
+
+</body>
+</html>

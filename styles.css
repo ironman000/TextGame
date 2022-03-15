@@ -1,0 +1,30 @@
+body{
+    background-color:rgb(140, 198, 235);
+    text-align: center;
+    font-family: 'Times New Roman', fantasy, serif;
+    border-style: dashed;
+    border-color: rgb(104, 52, 34);
+
+}
+
+h1{
+    color:rgb(117, 1, 1); 
+    text-align: center;
+    margin-top: 3%;
+    font-size: 5em;
+    font-family:Impact, fantasy, 'Arial Narrow Bold';
+}
+h2{
+    color:darkslategrey;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, serif ;
+}
+img{
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+
+
+}
+
