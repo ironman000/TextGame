@@ -28,18 +28,34 @@
 
 <body>
     <h2>The Move...</h2>
-    <p>Jake: "Excellent idea! I can use my powers to move him far awar from us!"</p><br>   
+    <button onclick="typeWriter()">Read</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    var i = 0;
+    var txt = "'Excellent teamwork! No wacked-out horse can withstand our bestie-strength. Lift thy wacko-horseth!'"
+    var speed = 30;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+
+    <br>   
     <img src="https://userscontent2.emaze.com/images/65d00649-473c-4f4f-86a9-59cc180477ba/3dafa19e0e79150f593878c465cc37ca.png">
-    <p>Jake picks up the horse and stretches himself to play him on a far away hill.</p><br>
-    <p>You: "Look at that! We can barely see him. We can finally go to sleep!"</p><br>
-    <p> Jake: " Yeah!"</p><br>
+    <p>Together, you pick up the horse and carry him to a hill far enough to fade into the night. Then, you start walking back to the Treehouse.</p><br>
+    <p>You: "Look at that! We can barely see him from here. We can finally go to sleep!"</p><br>
+    <p> Jake: " Yeah! We are unstoppable."</p><br>
 
     
     <a href="Finale2.html">Next</a><br><br>
     
-    
 
-    
 
 </body>
 </html>

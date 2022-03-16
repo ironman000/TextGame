@@ -21,17 +21,37 @@
   margin-right: auto;
   width: 30%;
 }
+    p{
+      margin-left: 10%;
+      text-align: left;
+    }
 
         </style>
 </head>
 
 <body>
     <h2>The Eyes...</h2>
-    <p> You and your best friend Jake -- who is also a dog-- are snuggled up in your pajamas ready for the night's rest...</p><br>    
-    <p> You tuck Jake in and wish him sweet dreams. Then you head towards your bed to fall asleep. </p><br>
+    <button onclick="typeWriter()">Read</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    var i = 0;
+    var txt = "You and your best friend Jake -- who is also a dog-- are snuggled up in your pajamas ready for the night's rest... You tuck Jake in and wish him sweet dreams. Then you head towards your bed to fall asleep."
+    var speed = 45;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+    
     <img src="https://images5.fanpop.com/image/quiz/864000/864867_1338065850934_453_300.jpg">
     <p> "What is that?!" You look out your window to see a creepy horse staring from a distance into your TreeHouse! What are you going to do?</p><br>
-
+    
     
     
     <a href="pages/Ignore.html">Ignore it and go to sleep.</a><br><br>
@@ -39,27 +59,6 @@
     
     
 
-    <button onclick="typeWriter(txt)">Read</button>
-
-    
-<p id="demo"></p>
-
-<script>
-var i = 0;
-var txt = "You and your best friend Jake -- who is also a dog-- are snuggled up in your pajamas ready for the night's rest..."
-let txt2 ="You tuck Jake in and wish him sweet dreams. Then you head towards your bed to fall asleep."
-var txt3= "'What is that?!' You look out your window to see a creepy horse staring from a distance into your TreeHouse! What are you going to do?"
-var speed = 30;
-
-function typeWriter(text, id) {
-  if (i < text.length) {
-    console.log(text.length);
-    document.getElementById("demo").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-</script>
-
+  
 </body>
 </html>

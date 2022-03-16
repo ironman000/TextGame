@@ -28,8 +28,26 @@
 
 <body>
     <h2>The Shadow...</h2>
-    <img src="https://preview.redd.it/3ivlz2om6hc31.png?auto=webp&s=cca7d6ffc17323b7da14789e372167ffd4faadeb">
-    <p>"This is too creepy, man!"</p><br>    
+
+    <button onclick="typeWriter()">Read</button>
+    
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = "This is too creepy, man! It's gonna give us nightmares."
+var speed = 30;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+    <img src="https://preview.redd.it/3ivlz2om6hc31.png?auto=webp&s=cca7d6ffc17323b7da14789e372167ffd4faadeb">   
     <p> The moon rises and cast his shadow in your house. You can't sleep! </p><br>
     <p> What are you going to do?</p><br>
 
@@ -37,7 +55,7 @@
     <a href="Fight.html">Fight the math outta him!</a><br><br>
     <a href="Polite.html">Ask him to move politely</a>
     
-    
+
 
     
 

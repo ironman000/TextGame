@@ -28,10 +28,28 @@
 
 <body>
     <h2>The Music...</h2>
-    <p>Jake: "Excellent idea! No one can resist classic Mozart!</p><br>   
+    <button onclick="typeWriter()">Read</button>
+    
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = "'No one can resist the power of classic Mozart! I can lure him away with these chords I remember.'"
+var speed = 30;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+    
+<br>   
     <img src="https://i.ytimg.com/vi/b9OdSmvw668/maxresdefault.jpg">
-    <p>Snakes start to slither towards you and the horse. Jake is luring the wrong animal!</p><br>
-    <p>You: "Jake, stop it! Your wacko making it worse!"</p><br>
+    <p>Jake is too tired to get this done by himself and starts messing up the chords. Snakes start to slither towards you and the horse. Jake is luring the wrong animal!</p><br>
+    <p>You: "Jake, stop it! Your lame music is making it worse!"</p><br>
     <p> Jake: "Well you're not doing anything! And I'm getting even more tired. This is all your fault!"</p><br>
 
     

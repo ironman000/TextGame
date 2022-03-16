@@ -28,15 +28,33 @@
 
 <body>
     <h2>The Talk...</h2>
-    <p>You: "Hey..uhh, Mr Horse. Could you... please stop staring into our TreeHouse. You're creeping us the math out.""</p><br>  
+    <button onclick="typeWriter()">Read</button>
+    
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = "'Hey...uhh, Mr Horse. Could you... please stop staring into our TreeHouse. You're creeping us the math out.'"
+var speed = 30;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+    <br>  
     <img src="https://i.ytimg.com/vi/yvekA_4TOg4/maxresdefault.jpg">  
     <p>*silence*</p><br>
     <p>Jake: "Bro, this horse is totally poo-brained. He's never going to leave."</p><br>
-    <p>You: "Well if he won't move, we'll have to move him ourselves..."</p>
+    <p>You: "Well if he won't move, we'll have to think of something ourselves..."</p>
 
     
-    <a href="Lure.html">Lure him away.</a><br><br>
-    <a href="Move.html">Pick him up.</a>
+    <a href="Lure.html">Let Jake solve the problem.</a><br><br>
+    <a href="Move.html">Offer to pick him up.</a>
     
     
 

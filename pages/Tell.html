@@ -28,8 +28,25 @@
 
 <body>
     <h2>The Choice...</h2>
+    <button onclick="typeWriter()">Read</button>
+    
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = "'Hey Jake! There's a wacked-out horse outside our house. He's a heebie-jeebie house horse!'"
+var speed = 30;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
     <img src="https://external-preview.redd.it/eDDCD6PsAA560nXU7NQW8-JL-QBE0w0WNHMT0wRJfBg.jpg?auto=webp&s=e7411979201e983f3b5bcd68f1de4e8982f06abd">
-    <p> You: "Hey Jake! There's a wacked-out horse outside our house. He's a heebie-jeebie house horse!"</p><br>    
+    <br>    
     <p> Jake: "You're right, he's a total weirdo. We should kick him off the hill." </p><br>
     <p> You: "We can't just hurt him, that's wrong. We should ask him politely, that's what real heros do!</p><br>
 
